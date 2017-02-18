@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>前端笔记----面对对象(一) | 咸鱼王の博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
+
+  </head>
+
+  <body>
+
+<header>
+	<a id="logo" href="/" title="咸鱼王の博客">
+	<img src="/favicon.png" alt="咸鱼王の博客"></a>
+	
+	
+		<!--搜索栏-->
+		<i class="js-toggle-search iconfont icon-search"></i>
+
+
+<form class="js-search search-form search-form--modal" method="get" action="http://gushi.li" role="search">
+	<div class="search-form__inner">
+		<div>
+			<i class="iconfont icon-search"></i>
+			<input class="text-input" placeholder="Enter Key..." type="search">
+		</div>
+	</div>
+</form>
+	
+
+	
+		<!--侧边导航栏-->
+		<a id="nav-toggle" href="#"><span></span></a>
+
+<nav>
+	<div class="menu-top-container">
+		<ul id="menu-top" class="menu">
+			
+				
+				<li class="current-menu-item">
+					<a href="https://github.com/wzg823" target="_blank">Github</a>
+				</li>
+			
+		</ul>
+	</div>
+</nav>
+	
+
+</header>
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	
+		<figure class="top-image" data-enable=true></figure>
+	
+</div>
+
+<!--文章列表-->
+<div class="wrapper">
+  
+    <!--文章-->
+<article>
+	
+  
+    <h1 class="post-title" itemprop="name">
+      前端笔记----面对对象(一)
+    </h1>
+  
+
+	<div class='post-body mb'>
+		<p>1.面向对象的基本概念<br>   js是不是一个面向对象的语言?<br>    不是:与传统面向对象的理论有矛盾.#c,java.<br>    是:js里到处都是对象.数组,时间,正则…和DOM<br>        也可以像传统面向对象的语言那样用new的方式创建对象.<br>  js是一个基于对象的多范式的编程语言<br>    多范式:编程风格<br>        面向过程的方式编程<br>        面向对象的方式编程<br>        函数式…   函数式的一个特点:递归与链式<br>        jQuery就是典型的链式编程风格<br>        比如给div标签添加样式</p>
+<pre><code>            $(&quot;div&quot;).css(&quot;border&quot;,&quot;1px solid red&quot;)
+                   .css(&quot;width&quot;,&quot;400px&quot;)
+   .css(&quot;height&quot;,&quot;200px&quot;)
+</code></pre><h4 id="面向对象的概念"><a href="#面向对象的概念" class="headerlink" title="面向对象的概念"></a>面向对象的概念</h4><p>面向:朝向—关注,用<br>面向过程开发:使用过程的方式开发<br>    过程:步骤,细节,顺序等…<br>面向对象开发:使用对象开发<br>    要做什么就找到对应的对象,告诉它做,等结果<br>面向对象是面向过程的封装<br>万物皆对象<br>在实际开发中,对象是一个抽象的概念,可以将其简单的理解为:数据集或功能集;<br>数据集:很多数据打包到一起. </p>
+<pre><code>{name:&quot;张三&quot;,age:19,gender:&quot;男&quot;}
+</code></pre><p>功能集(函数集,方法集):自己定义的函数越多,那么开发的时候越方便<br>但是自己定义的越多 那么与引入的框架冲突的几率越大<br>一旦出现命名冲突,那么就会造成框架中的某些功能无法实现<br>定义一个对象,然后所有的函数变成这个函数的方法<br>在js中,所谓的对象就是键值对的集合<br>也可以混合使用例如:jQuery</p>
+<pre><code>$(&quot;div&quot;).html(...)
+</code></pre><p>这是一个jq对象,但是实际里面包含DOM对象  也说明jq中包含方法<br>面向对象的特性:<br>    抽象性<br>        对象只包含最核心的主要信息<br>        只需要描述出需要的数据即可<br>        名词提炼法找对象<br>            做一个表格排序<br>            过程<br>            1.创建表格<br>            2.添加点击事件<br>            3.排序,更新数据<br>            对象<br>            1.创建表格对象<br>            2.添加数据<br>        在实际开发中如果需要完成一个功能<br>            首先考虑系统是否提供了对象<br>            例如创建图片 var img=new Image();<br>            获取页面元素:document, 标签对象<br>        如果系统<br>    封装性<br>    继承性<br>    … …(多态性)</p>
+
+	</div>
+	<div class="meta split">
+		<time class="post-date" datetime="2015-02-24T16:00:00.000Z" itemprop="datePublished">2015-02-25</time>
+	</div>
+</article>
+
+<!--评论-->
+
+
+  
+</div>
+
+
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  
+
+
+  <div class="wrapper"></div>
+
+
+
+
+
+<div class="fat-footer">
+	<div class="wrapper">
+		<div class="layout layout--center">
+			<div class="layout__item palm-mb">
+				<div class="media">
+					<img class="headimg" src='/touxiang.png' alt='井里的keroro'>
+					<div class="media__body">
+						<h4>咸鱼王の博客</h4>
+						<p class='site-description'>null</p>
+					</div>
+				</div>
+				<div class="author-contact">
+					<ul>
+						
+							
+							<li>
+				        		<a href="http://weibo.com/u/2246832757" target="_blank">
+				        			
+				        				<i class="iconfont icon-weibo"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://github.com/wzg823" target="_blank">
+				        			
+				        				<i class="iconfont icon-github"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		<span>Theme by <a href="http://github.com/yumemor">Yumemor</a>. Powered by <a href="http://hexo.io">Hexo</a></span>
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
+	<script src="/js/lib.js"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	<script src="/js/module.js"></script>
+	<script src="/js/script.js"></script>
+	<script type='text/javascript'>
+		//代码高亮
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>

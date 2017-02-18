@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>前端笔记----JS(一) | 咸鱼王の博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+      <link rel="icon" href="/favicon.png">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="/js/google-code-prettify/tomorrow-night-eighties.min.css">
+
+  </head>
+
+  <body>
+
+<header>
+	<a id="logo" href="/" title="咸鱼王の博客">
+	<img src="/favicon.png" alt="咸鱼王の博客"></a>
+	
+	
+		<!--搜索栏-->
+		<i class="js-toggle-search iconfont icon-search"></i>
+
+
+<form class="js-search search-form search-form--modal" method="get" action="http://gushi.li" role="search">
+	<div class="search-form__inner">
+		<div>
+			<i class="iconfont icon-search"></i>
+			<input class="text-input" placeholder="Enter Key..." type="search">
+		</div>
+	</div>
+</form>
+	
+
+	
+		<!--侧边导航栏-->
+		<a id="nav-toggle" href="#"><span></span></a>
+
+<nav>
+	<div class="menu-top-container">
+		<ul id="menu-top" class="menu">
+			
+				
+				<li class="current-menu-item">
+					<a href="https://github.com/wzg823" target="_blank">Github</a>
+				</li>
+			
+		</ul>
+	</div>
+</nav>
+	
+
+</header>
+<div class="m-header ">
+	<section id="hero1" class="hero">
+		<div class="inner">
+		</div>
+	</section>
+	
+		<figure class="top-image" data-enable=true></figure>
+	
+</div>
+
+<!--文章列表-->
+<div class="wrapper">
+  
+    <!--文章-->
+<article>
+	
+  
+    <h1 class="post-title" itemprop="name">
+      前端笔记----JS(一)
+    </h1>
+  
+
+	<div class='post-body mb'>
+		<h4 id="Javascript的限制"><a href="#Javascript的限制" class="headerlink" title="Javascript的限制:"></a>Javascript的限制:</h4><p> 1.不允许写服务器机器上的文件;</p>
+<p> 2.不能关闭不是由它打开的窗口,这是为了避免一个站点关闭其他任何站点的窗口,从而独占浏览器;</p>
+<p> 3.不能从来自另一个服务器的已经打开的网页中读取信息.也就是说网页不能读取已经打开的其他窗口中的信息,因此无法探察访问这个站点的冲浪者还在访问其他那些站点.</p>
+<h4 id="AJAX-Asynchronous-JavaScript-and-XML-异步JavaScript和XML"><a href="#AJAX-Asynchronous-JavaScript-and-XML-异步JavaScript和XML" class="headerlink" title="AJAX(Asynchronous JavaScript and XML:异步JavaScript和XML):"></a>AJAX(Asynchronous JavaScript and XML:异步JavaScript和XML):</h4><p>Ajax是一种创建交互式web应用程序的方式.可以通过用Ajax构建的web应用程序向用户提供这种动态的交互性.这样的话,用户几乎不需要等待,并一直有控制能力,而且可以创建具有与传统桌面应用程序相同的用户体验的基于web的应用程序.</p>
+<p>一般情况下Ajax是指一下这些技术的组合:</p>
+<p>1.XHTML;</p>
+<p>2.CSS;</p>
+<p>3.使用JavaScript访问的DOM;</p>
+<p>4.HXM或JSON,服务器和客户端之间传输的数据格式;</p>
+<p>5.XMLHttpRequest,用来从服务器获取数据;</p>
+<h4 id="对象"><a href="#对象" class="headerlink" title="对象:"></a>对象:</h4><p>对象具有属性(property),对象的属性本身也是对象,可以有自己的对象,所以,对象可以有子对象.<br>对象可以做的事情称为方法(method),圆括号表示他们是方法,而不是属性.<br>可以将对象,属性和方法组合在一起,从而更好地描述对象或过程.在JavaScript中,这些成分由点号分隔,称为点号语法(dot syntax).</p>
+<h4 id="DOM"><a href="#DOM" class="headerlink" title="DOM:"></a>DOM:</h4><p>HTML的标签和文档在JS中的映射.在网页上,组成页面(或文档)的对象被组织在一个树形结构中.</p>
+<h4 id="事件-event-是在用户在访问页面时执行的操作"><a href="#事件-event-是在用户在访问页面时执行的操作" class="headerlink" title="事件(event):是在用户在访问页面时执行的操作."></a>事件(event):是在用户在访问页面时执行的操作.</h4><p>JavaScript使用称为事件处理程序的命令来处理事件.用户在页面上的操作会触发脚本中的事件处理程序.</p>
+<h4 id="值和变量"><a href="#值和变量" class="headerlink" title="值和变量:"></a>值和变量:</h4><p>在js中一段信息就是一个值(value).</p>
+<p>值的类型:数字,字符串,布尔值,空值(null),对象,函数.</p>
+<p>变量是用来保存值的. myName=”dori”;</p>
+<p>注:js区分大小写,变量名不能包含空格或其他标点符号,也不能以数字开头,也不能使用保留字.</p>
+
+	</div>
+	<div class="meta split">
+		<time class="post-date" datetime="2014-12-09T16:00:00.000Z" itemprop="datePublished">2014-12-10</time>
+	</div>
+</article>
+
+<!--评论-->
+
+
+  
+</div>
+
+
+  <svg id="bigTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+    <path d="M0 0 L50 100 L100 0 Z"></path>
+  </svg>
+
+  
+
+
+  <div class="wrapper"></div>
+
+
+
+
+
+<div class="fat-footer">
+	<div class="wrapper">
+		<div class="layout layout--center">
+			<div class="layout__item palm-mb">
+				<div class="media">
+					<img class="headimg" src='/touxiang.png' alt='井里的keroro'>
+					<div class="media__body">
+						<h4>咸鱼王の博客</h4>
+						<p class='site-description'>null</p>
+					</div>
+				</div>
+				<div class="author-contact">
+					<ul>
+						
+							
+							<li>
+				        		<a href="http://weibo.com/u/2246832757" target="_blank">
+				        			
+				        				<i class="iconfont icon-weibo"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+							
+							<li>
+				        		<a href="https://github.com/wzg823" target="_blank">
+				        			
+				        				<i class="iconfont icon-github"></i>
+				        			
+				        		</a>
+				        	</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer" role="contentinfo">
+	<div class="wrapper wrapper--wide split split--responsive">
+		<span>Theme by <a href="http://github.com/yumemor">Yumemor</a>. Powered by <a href="http://hexo.io">Hexo</a></span>
+	</div>
+</footer>
+
+	<!-－这里导入了 lib.js 里面涵盖了 jQuery 等框架 所以注释掉-->
+	<!--<script src="http://lib.sinaapp.com/js/jquery/2.0/jquery.min.js"></script>-->
+	<script src="/js/lib.js"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	<script src="/js/module.js"></script>
+	<script src="/js/script.js"></script>
+	<script type='text/javascript'>
+		//代码高亮
+		$(document).ready(function(){
+	 		$('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+   			prettyPrint();
+		});
+	</script>
+	</body>
+</html>
